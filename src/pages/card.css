@@ -1,0 +1,331 @@
+/*Aqui falta KYC en el dashboard */
+.cardKYC {
+	position: relative;
+	margin-bottom: 1.5rem;
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+	border-radius: 0.75rem;
+	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column-reverse;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.infoKYC {
+	position: absolute;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	--tw-text-opacity: 1;
+	color: rgba(29, 40, 73, var(--tw-text-opacity));
+	-webkit-box-pack: center;
+	justify-content: center;
+	top: 0px;
+	left: 0px;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin-top: 0.75rem;
+	margin-left: 0.75rem;
+}
+
+@media (min-width: 640px) {
+	.contenidoKYC {
+		padding-top: 3.5rem;
+	}
+}
+.contenidoKYC {
+	display: flex;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	justify-items: center;
+	padding: 1.75rem;
+	text-align: center;
+	font-family: ui-sans-serif, system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+		"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 640px) {
+	.imagenKYC {
+		max-height: 14rem;
+	}
+}
+
+.imagenKYC {
+	display: block;
+	max-height: 10rem;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-token {
+	width: 450px;
+	height: 250px;
+	background-color: #fff;
+	background: linear-gradient(#f8f8f8, #fff);
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 2.5rem;
+}
+
+.card-token h1 {
+	text-align: center;
+}
+
+.card-token .additional {
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	background: linear-gradient(#2bb454, #2bb454);
+	transition: width 0.4s;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.card.green .additional {
+	background: linear-gradient(#92bca6, #a2ccb6);
+}
+
+.card-token:hover .additional {
+	width: 100%;
+	border-radius: 0 5px 5px 0;
+}
+
+.card-token .additional .user-card {
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.card-token .additional .user-card::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10%;
+	right: -2px;
+	height: 80%;
+	border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card-token .additional .user-card .level,
+.card-token .additional .user-card .points,
+.card-token .additional .user-card .sell {
+	top: 15%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.15);
+	padding: 0.125rem 0.75rem;
+	border-radius: 100px;
+	white-space: nowrap;
+}
+
+.card-token .additional .user-card .points {
+	top: 80%;
+}
+.card-token .additional .user-card .sell {
+	top: 90%;
+}
+
+.card-token .additional .user-card svg {
+	top: 50%;
+}
+
+.card-token .additional .more-info {
+	width: 300px;
+	float: left;
+	position: absolute;
+	left: 150px;
+	height: 100%;
+}
+
+.card-token .additional .more-info h1 {
+	color: #fff;
+	margin-bottom: 0;
+	font-size: xx-large;
+}
+
+.card.green .additional .more-info h1 {
+	color: #224c36;
+}
+
+.card-token .additional .coords {
+	margin: 0 1rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.card.green .additional .coords {
+	color: #325c46;
+}
+
+.card-token .additional .coords span + span {
+	float: right;
+}
+
+.card-token .additional .stats {
+	font-size: 2rem;
+	display: flex;
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	top: auto;
+	color: #fff;
+}
+
+.card.green .additional .stats {
+	color: #325c46;
+}
+
+.card-token .additional .stats > div {
+	flex: 1;
+	text-align: center;
+}
+
+.card-token .additional .stats i {
+	display: block;
+}
+
+.card-token .additional .stats div.title {
+	font-size: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card-token .additional .stats div.value {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+}
+
+.card-token .additional .stats div.value.infinity {
+	font-size: 2.5rem;
+}
+.card-token .general h1 {
+	font-size: xx-large;
+}
+.card-token .general {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	box-sizing: border-box;
+	padding: 1rem;
+	padding-top: 0;
+}
+
+.card-token .general .more {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 0.9em;
+}
+
+/* card flip animation */
+.flip-card {
+	background-color: transparent;
+	perspective: 3000px;
+	/* Genera un efecto 3D */
+	height: 300px;
+	/* Es necesario una altura para que aparezca en la página */
+	border: 0px;
+	/*Elimina el borde predeterminado que tienen las tajetas en Bootstrap */
+}
+
+/* Este contenedor nos posiciona los dos lados de la tarjeta */
+.flip-card-inner {
+	position: relative;
+	/* dejamos que la grid de bootstrap posicione la tarjeta */
+	width: 100%;
+	height: 100%;
+	transition: transform 0.6s;
+	/* duracion de la animacion */
+	transform-style: preserve-3d;
+}
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Estructura básica de las dos caras */
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	/* necesario para posicionar las dos caras a la misma altura */
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	/* nos genera una sombra */
+	box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.3);
+	border-radius: 0.5rem;
+}
+
+/* Estructura específica de la cara frontal
+.flip-card-front {
+	Ajusta la imagen al tamaño de la tarjeta para hacerla adaptable
+	Mascara para oscurecer la imagen y que se pueda ver el titulo
+} */
+
+.flip-card-front img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.flip-card-front .mask {
+	position: absolute;
+	/* hacemos que ocupe toda la imagen */
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* color de la mascara */
+	background-color: rgba(62, 69, 81, 0.5);
+	/* redondeamos la mascara para que se ajuste a la imagen */
+	border-radius: 0.5rem;
+	/* Posición del título en la parte frontal de la tarjeta */
+}
+
+.flip-card-front .mask .align-end {
+	position: absolute;
+	top: 85%;
+	left: 20px;
+	color: #fafafa;
+	font-size: 1.5em;
+}
+
+/* Estructura específica de la cara trasera */
+.flip-card-back {
+	background-color: #edfff6;
+	transform: rotateY(180deg);
+
+	/* Ajusta la altura del texto al centro de la tarjeta */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

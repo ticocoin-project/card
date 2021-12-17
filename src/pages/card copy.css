@@ -1,0 +1,369 @@
+.single_advisor_profile {
+	position: relative;
+	margin-bottom: 50px;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	z-index: 1;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+	box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_advisor_profile .advisor_thumb {
+	position: relative;
+	z-index: 1;
+	border-radius: 15px 15px 0 0;
+	margin: 0 auto;
+	/* padding: 30px 30px 0 30px;
+	background-color: #3f43fd; */
+	overflow: hidden;
+}
+.single_advisor_profile .advisor_thumb::after {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	position: absolute;
+	width: 150%;
+	height: 80px;
+	bottom: 125px;
+	left: -25%;
+	content: "";
+	background-color: #ffffff;
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+@media only screen and (max-width: 575px) {
+	.single_advisor_profile .advisor_thumb::after {
+		height: 160px;
+		bottom: -90px;
+	}
+}
+.single_advisor_profile .advisor_thumb .social-info {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	top: 69%;
+	right: 30px;
+	text-align: right;
+}
+.single_advisor_profile .advisor_thumb .social-info a {
+	font-size: 14px;
+	color: #020710;
+	padding: 0 5px;
+}
+.single_advisor_profile .advisor_thumb .social-info a:hover,
+.single_advisor_profile .advisor_thumb .social-info a:focus {
+	color: #3f43fd;
+}
+.single_advisor_profile .advisor_thumb .social-info a:last-child {
+	padding-right: 0;
+}
+.single_advisor_profile .single_advisor_details_info {
+	position: relative;
+	z-index: 1;
+	padding: 30px;
+	text-align: right;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	border-radius: 0 0 15px 15px;
+	background-color: #ffffff;
+	margin-top: -160px;
+}
+.single_advisor_profile .single_advisor_details_info::after {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	height: 3px;
+	background-color: #2bb454;
+	content: "";
+	top: 12px;
+	right: 30px;
+}
+.single_advisor_profile .single_advisor_details_info h6 {
+	margin-bottom: 0.25rem;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.single_advisor_profile .single_advisor_details_info h6 {
+		font-size: 14px;
+	}
+}
+.single_advisor_profile .single_advisor_details_info p {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.single_advisor_profile .single_advisor_details_info p {
+		font-size: 12px;
+	}
+}
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+	background-color: #2bb454;
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+	color: #ffffff;
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a:hover,
+.single_advisor_profile:hover .advisor_thumb .social-info a:focus,
+.single_advisor_profile:focus .advisor_thumb .social-info a:hover,
+.single_advisor_profile:focus .advisor_thumb .social-info a:focus {
+	color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info,
+.single_advisor_profile:focus .single_advisor_details_info {
+	background-color: #2bb454;
+}
+.single_advisor_profile:hover .single_advisor_details_info::after,
+.single_advisor_profile:focus .single_advisor_details_info::after {
+	background-color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info h6,
+.single_advisor_profile:focus .single_advisor_details_info h6 {
+	color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info p,
+.single_advisor_profile:focus .single_advisor_details_info p {
+	color: #ffffff;
+}
+
+/*Aqui falta KYC en el dashboard */
+.cardKYC {
+	position: relative;
+	margin-bottom: 1.5rem;
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+	border-radius: 0.75rem;
+	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column-reverse;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.infoKYC {
+	position: absolute;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	--tw-text-opacity: 1;
+	color: rgba(29, 40, 73, var(--tw-text-opacity));
+	-webkit-box-pack: center;
+	justify-content: center;
+	top: 0px;
+	left: 0px;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin-top: 0.75rem;
+	margin-left: 0.75rem;
+}
+
+@media (min-width: 640px) {
+	.contenidoKYC {
+		padding-top: 3.5rem;
+	}
+}
+.contenidoKYC {
+	display: flex;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	justify-items: center;
+	padding: 1.75rem;
+	text-align: center;
+	font-family: ui-sans-serif, system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+		"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 640px) {
+	.imagenKYC {
+		max-height: 14rem;
+	}
+}
+
+.imagenKYC {
+	display: block;
+	max-height: 10rem;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card {
+	width: 450px;
+	height: 250px;
+	background-color: #fff;
+	background: linear-gradient(#f8f8f8, #fff);
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+	margin: 1.5rem;
+}
+
+.card h1 {
+	text-align: center;
+}
+
+.card .additional {
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	background: linear-gradient(#2bb454, #2bb454);
+	transition: width 0.4s;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.card.green .additional {
+	background: linear-gradient(#92bca6, #a2ccb6);
+}
+
+.card:hover .additional {
+	width: 100%;
+	border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.card .additional .user-card::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10%;
+	right: -2px;
+	height: 80%;
+	border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+	top: 15%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.15);
+	padding: 0.125rem 0.75rem;
+	border-radius: 100px;
+	white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+	top: 85%;
+}
+
+.card .additional .user-card svg {
+	top: 50%;
+}
+
+.card .additional .more-info {
+	width: 300px;
+	float: left;
+	position: absolute;
+	left: 150px;
+	height: 100%;
+}
+
+.card .additional .more-info h1 {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.card.green .additional .more-info h1 {
+	color: #224c36;
+}
+
+.card .additional .coords {
+	margin: 0 1rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.card.green .additional .coords {
+	color: #325c46;
+}
+
+.card .additional .coords span + span {
+	float: right;
+}
+
+.card .additional .stats {
+	font-size: 2rem;
+	display: flex;
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+	top: auto;
+	color: #fff;
+}
+
+.card.green .additional .stats {
+	color: #325c46;
+}
+
+.card .additional .stats > div {
+	flex: 1;
+	text-align: center;
+}
+
+.card .additional .stats i {
+	display: block;
+}
+
+.card .additional .stats div.title {
+	font-size: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+	font-size: 2.5rem;
+}
+
+.card .general {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	box-sizing: border-box;
+	padding: 1rem;
+	padding-top: 0;
+}
+
+.card .general .more {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 0.9em;
+}
